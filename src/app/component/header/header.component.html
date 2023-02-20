@@ -1,0 +1,26 @@
+<header>
+  <div class="navbar bg-warning shadow-sm">
+    <div class="navbar-brand align-item-center d-flex">
+      <i
+        style="font-size: 40px; margin-left: 20px; margin-top: 5px;"
+        class="fa-brands fa-amazon"
+      >
+      </i>
+      <strong style="font-size: 30px; margin-left: 20px;">Amazon.in</strong>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search Products" />
+      </div>
+      <span class="fas fa-search search-icon"></span>
+    </div>
+    <button
+      routerLink="cart"
+      style="margin-right: 20px;"
+      class="btn btn-warning"
+    >
+      <i style="font-size: 30px;" class="fa -duotone fa-cart-plus"></i>
+      <div style="font-size: 10px;" class="badge bg-info">
+        {{ totalItem }}
+      </div>
+    </button>
+  </div>
+</header>
