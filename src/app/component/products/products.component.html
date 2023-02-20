@@ -1,27 +1,15 @@
 <div class="card-top container-fluid">
   <div class="container d-flex">
-    <div class="card" style="width: 4rem; height: 8rem;">
-      <img
-        src="https://www.flaticon.com/free-icon/shopping-bag_9405455?related_id=9405455"
-        class="card-img-top"
-        alt="..."
-      />
-      <div class="card-body"></div>
-    </div>
-
     <div class="item">
       <a>
-        <img
-          src="https://www.flaticon.com/free-icon/shopping-bag_9405455?related_id=9405455"
-          alt=""
-        />
+        <img src="https://img.icons8.com/fluency/256/used-product.png" alt="" />
         <h6>All Products</h6>
       </a>
     </div>
     <div class="item">
       <a>
         <img
-          src="https://pngfreepic.com/wp-content/uploads/2021/06/gift-box-png-freepic-169.png?v=1663318302"
+          src="https://img.icons8.com/fluency/256/technology-items.png"
           alt=""
         />
         <h6>Electronics</h6>
@@ -29,19 +17,13 @@
     </div>
     <div class="item">
       <a>
-        <img
-          src="https://pngfreepic.com/wp-content/uploads/2021/06/gift-box-png-freepic-169.png?v=1663318302"
-          alt=""
-        />
+        <img src="https://img.icons8.com/fluency/256/clothes.png" alt="" />
         <h6>Fashion</h6>
       </a>
     </div>
     <div class="item">
       <a>
-        <img
-          src="https://pngfreepic.com/wp-content/uploads/2021/06/gift-box-png-freepic-169.png?v=1663318302"
-          alt=""
-        />
+        <img src="https://img.icons8.com/fluency/256/jewelry.png" alt="" />
         <h6>Jewellery</h6>
       </a>
     </div>
@@ -64,12 +46,12 @@
           {{ item.description }}
         </p>
         <p><strong>Price:</strong>${{ item.price }}</p>
-        <button class="btn btn-success" (click)="addtocart(item)">
+        <button class="btn btn-info" (click)="addtocart(item)">
           Add to Cart
         </button>
         <br />
         <button class="btn btn-warning">
-          <a routerLink="/view/{{ item.id }}">View Product</a>
+          <a class="route" routerLink="/view/{{ item.id }}">View Product</a>
         </button>
       </div>
     </ng-container>
